@@ -4,7 +4,7 @@
 public class TransformExample : MonoBehaviour
 {
     [SerializeField] private Transform _target;
-    [SerializeField] private float _speed = 2.0f;
+    [SerializeField] private float _speed;
     [SerializeField] private float _rotationSpeed;
     [SerializeField] private Vector3 _my3DVector;
     [SerializeField] private Quaternion _startPosition;
@@ -32,7 +32,7 @@ public class TransformExample : MonoBehaviour
         //transform.Translate(Vector3.forward * _speed * Time.deltaTime, Space.Self);
 
         // Движение объекта вдоль оси Z
-        // transform.Translate(0, 0, _speed * Time.deltaTime);
+        // transform.Translate(0, 0, Speed * Time.deltaTime);
 
         // Движение объекта вперед относительно камеры
         //  transform.Translate(Vector3.forward * Time.deltaTime * Speed, Camera.main.transform);

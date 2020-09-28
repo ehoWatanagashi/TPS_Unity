@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class FireSpawner : MonoBehaviour
 {
 
     [SerializeField] private GameObject _object;
