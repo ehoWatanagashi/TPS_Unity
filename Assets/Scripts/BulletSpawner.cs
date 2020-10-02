@@ -3,13 +3,14 @@
 public class BulletSpawner : MonoBehaviour
 {
 
-    [SerializeField] private GameObject _object;
-    [SerializeField] private Transform _spawnPoint;
+    [SerializeField] private GameObject _bullet;
+    [SerializeField] private Transform _bulletSpawnPoint;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) { 
-            Instantiate(_object, _spawnPoint.position, _spawnPoint.rotation);
+        if (Input.GetKeyDown(KeyCode.Mouse0)) 
+        { 
+            Instantiate(_bullet, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
         }
     }
 }

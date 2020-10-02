@@ -10,4 +10,11 @@ public class BulletPhysics : MonoBehaviour
     {
         transform.Translate(Vector3.forward * _bulletSpeed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {       
+            Destroy(gameObject);
+            Debug.Log("Bullet Destroyed");
+    }
+
 }
