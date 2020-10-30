@@ -16,5 +16,6 @@ public class BulletPhysics : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Bullet Destroyed");
     }
+          
 
 }

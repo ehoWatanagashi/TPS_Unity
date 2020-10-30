@@ -7,6 +7,8 @@ TagManager:
   - Floor
   - Wall
   - Ammo
+  - Enemy
+  - HealthBar
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Lighting
   - Ground
   - Postprocessing
-  - 
+  - Player
   - 
   - 
   - 
